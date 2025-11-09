@@ -1,0 +1,43 @@
+
+
+LoginScreen {
+    align: center middle;
+    hatch: right $panel;
+
+    #super-tab-loginscr {
+        max-height: 30;
+        max-width: 60;
+        min-height: 25;
+        min-width: 60;
+        padding: 2 2;
+        border: round $accent;
+        align: center middle;
+
+        TabPane    { align: center middle; }
+        #tabs-list { align: center middle; }
+        ContentTab { margin: 0 10; }
+
+        #div-login,
+        #div-reg {
+            align: center top;
+            margin-top: 1;
+            max-width: 80%;
+
+            Label { margin-top: 1; }
+        }
+
+        #div-login-btns {
+            align: center middle;
+            margin-top: 2;
+            padding: 0 0;
+
+            Button { margin: 1 3; }
+        }
+
+        #div-reg-btns {
+            align: right middle;
+            padding-top: 2;
+            padding-right: 2;
+        }
+    }
+}

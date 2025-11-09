@@ -1,0 +1,8 @@
+SalesReportScreen {
+    MarkdownViewer {
+        margin: 1;
+        margin-left: 0;
+        padding: 1;
+
+    }
+}

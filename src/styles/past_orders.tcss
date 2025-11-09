@@ -1,0 +1,54 @@
+
+PastOrdersScreen {
+    align: center middle;
+
+    Vertical     { height: 8fr; }
+    Horizontal {
+        height: 1fr;
+        width: 80%;
+
+        Input {
+            width: 10%;
+        }
+
+        Button {
+            width: 5;
+        }
+    }
+
+    #md-order-detail {
+        height: 5fr;
+        margin: 1;
+    }
+
+    #table-orders {
+        margin: 1 1;
+        max-height: 7;
+    }
+
+    #hort-table-control {
+        align: right middle;
+        content-align: right middle;
+        width: 100%;
+        padding: 1;
+
+        Label {
+            padding: 1;
+            margin-left: 0;
+        }
+
+        Button {
+            max-width: 5;
+        }
+
+        Input {
+            width: 10;
+            margin-right: 0;
+        }
+    }
+
+    #hort-table-control > * {
+        margin-left: 1;
+    }
+}
+

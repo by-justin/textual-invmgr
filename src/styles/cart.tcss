@@ -1,0 +1,132 @@
+CartScreen {
+    align: center middle;
+
+    #vertscroll-content {
+        height: 4fr;
+        padding: 1;
+        margin-left: 1;
+        margin-right: 1;
+        margin-top: 2;
+        margin-bottom: 2;
+    }
+
+    #vertscroll-content:empty {
+        height: 4fr;
+        hatch: right $panel;
+        margin: 2;
+    }
+
+    Rule {
+        height: 0.1fr;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    #hort-buttons {
+        align: right middle;
+        height: 1fr;
+
+        Button {
+            margin-left: 2;
+            margin-right: 1;
+        }
+    }
+}
+
+CartItemWidget {
+    align: left middle;
+    height: 3;
+
+
+    Container {
+        layout: horizontal;
+        padding: 0 1;
+        height: 1;
+    }
+
+
+    #div-item     { width: 3fr; }
+    #div-actions { width: 1fr; align: right middle;}
+
+    CartItemActionLabel {
+        margin-left:  2;
+    }
+
+    #label-item-name    { width: 5fr; }
+    #label-item-qty     { width: 0.6fr; }
+    #label-item-price { width: 0.6fr; }
+}
+
+
+CartItemWidget:even{
+    background: $panel;
+}
+
+
+CheckoutModal {
+    align: center middle;
+
+    /** {*/
+    /*    outline: red;*/
+    /*}*/
+
+    Vertical {
+        align: center middle;
+        width: 60%;
+        height: 40;
+        padding: 2 2;
+        outline: round $accent;
+
+        Label {
+            padding-top: 2;
+            padding-bottom: 1;
+
+            text-style: bold;
+        }
+
+        MarkdownViewer {
+            padding-top: 1;
+            height: 4fr;
+            background: $background;
+        }
+
+        Horizontal {
+            height: 1fr;
+            margin-top: 3;
+            align: right middle;
+
+            Button {
+                margin: 0 2;
+            }
+        }
+
+        Vertical {
+            width: 4fr;
+            align: center top;
+            padding-top: 5;
+            padding-left: 2;
+
+            Horizontal {
+                /*background: red;*/
+                height: 6;
+                margin-bottom: 1;
+                align: center middle;
+            }
+
+            #btn-quit, #btn-addcart {
+                margin-left: 1;
+                margin-right: 1;
+            }
+
+            #btn-sub-qty, #btn-add-qty {
+                width: 5;
+                content-align: center middle;
+            }
+
+            Input {
+                margin-left: 1;
+                margin-right: 1;
+            }
+        }
+    }
+}

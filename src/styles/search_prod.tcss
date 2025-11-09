@@ -1,0 +1,81 @@
+ProdSearchScreen {
+    align: center top;
+    #input-search {
+        margin-left: 1;
+        margin-right: 1;
+        margin-top: 5;
+        margin-bottom: 2;
+    }
+
+    #table-search-result {
+        margin: 1 1;
+        max-height: 7;
+    }
+
+    Horizontal {
+        align: right middle;
+        height: 7;
+        padding: 2 1;
+
+        /*outline: red;*/
+    }
+
+    #input-page {
+        width: 10;
+    }
+    #label-total-page-cnt {
+        padding-top: 1;
+        padding-bottom: 1;
+        padding-right: 3;
+    }
+
+}
+
+ProdDetailModal {
+    align: center middle;
+
+    /** {*/
+    /*    outline: red;*/
+    /*}*/
+
+    #hort-prod-detail {
+        outline: $panel;
+        align: center top;
+        width: 60%;
+        height: 25;
+
+        MarkdownViewer {
+            padding-top: 1;
+            width: 4fr;
+        }
+
+        Vertical {
+            width: 4fr;
+            align: center top;
+            padding-top: 5;
+            padding-left: 2;
+
+            Horizontal {
+                /*background: red;*/
+                height: 6;
+                margin-bottom: 1;
+                align: center middle;
+            }
+
+            #btn-quit, #btn-addcart {
+                margin-left: 1;
+                margin-right: 1;
+            }
+
+            #btn-sub-qty, #btn-add-qty {
+                width: 5;
+                content-align: center middle;
+            }
+
+            Input {
+                margin-left: 1;
+                margin-right: 1;
+            }
+        }
+    }
+}
