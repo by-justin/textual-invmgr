@@ -1,6 +1,14 @@
 # Inventory Manager (TUI)
 
+> This repo is an archive of what was originally a group assignment. I mainly worked on the textual UI while the other group member implemented the sqlite CRUDs. 
+> 
+> To protect the privacy of the group members, the commit history has been scrubed, along with documents and code comments that might leak private information.
+
+
+
 A fast, keyboard-friendly inventory manager that runs entirely in your terminal. Browse products, inspect details, manage a cart, place orders, and (as a sales user) view reports and maintain inventory. The app is self-contained, backed by a local SQLite database, and serves as a concise reference for building TUIs with Textual.
+
+![](demo/demo.gif)
 
 ### Features at a glance
 - Product search with detail view
@@ -85,14 +93,3 @@ Pre-commit will handle the code formating and standardization at commit.
 pre-commit install
 pre-commit run --all-files
 ```
-
-### Documentation
-- System overview and user guide: docs/system_overview_user_guide.md
-- Detailed software design (architecture/modules/schema): docs/detailed_software_design.md
-- Testing strategy and example test cases: docs/testing_strategy.md
-- Team work and coordination (breakdown, time allocation, progress, coordination): docs/teamwork_coordination.md
-- Consolidated report (Markdown): designDoc.md (exported PDF: designDoc.pdf)
-
-
-### License
-This project is licensed under the terms of the license found in the `LICENSE` file.
